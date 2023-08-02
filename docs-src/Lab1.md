@@ -1,27 +1,12 @@
 # Lab 1 - Conceitos Básicos
 
-Para começar você deve clonar o repositório `https://github.com/Insper/Labs-de-C/`.
-
-| Pasta           | Arquivo  |
-|-----------------|----------|
-| `code/01-intro` | `main.c` |
-
-!!! info "Infra"
-    Os laboratórios do mutirão foram planejados para funcionar
-    no Linux, e você deve instalar os pacotes a seguir antes de começar o lab:
-
-    - `sudo apt install build-essential libsystemd-dev`
-
 !!! tip "Testando"
-    No terminal do Linux dentro da pasta `code/01-intro` execute o comando: `make`, se tudo der certo, o programa carrega a imagem: `deepak-kumar-rX9uFci3pfY-unsplash.pgm` e gera a imagem `image-out.pgm`.
+    Abra o terminal do VSCode (usando ``Ctrl + ` ``) dentro da pasta `atividade/01-intro` e execute o comando: `make tarefa1`, se tudo der certo, o programa carrega a imagem: `deepak-kumar-rX9uFci3pfY-unsplash.pgm` e gera a imagem `image-out.pgm`.
 
-    Se você estiver usando dual boot ou máquina virtual, a imagem `image-out.pgm` deve abrir automaticamente. Se isso não acontecer, procure a imagem na mesma pasta do código
-    e abra ela manualmente. Se, por algum incrível azar, seu sistema não reconhece imagens PGM, use [este site](http://paulcuth.me.uk/netpbm-viewer/).
+    Para abrir as imagens basta clicar duas vezes nelas. Uma nova aba do VSCode será aberta e você pode comparar visualmente os resultados. 
 
     ==Verifique se a imagem foi gerada corretamente.==
 
-!!! progress
-    Continuar...
 
 ## Começando
 
@@ -30,13 +15,6 @@ lado, a sintaxe é muito parecida com Java. Por outro lado, existem diferenças
 importantes e vocês estão longe de Java há mais ou menos meio semestre...
 
 Vamos começar com a revisão de alguns conceitos bem básicos. Dê uma olhada no arquivo `main.c` (por simplicidade, omitimos algumas linhas):
-
-!!! info
-    - Você pode abrir o arquivo no editor de código que preferir, mas indicamos abrir no
-    vscode.
-
-    - Será necessário um terminal para executar o comando `make`, você pode usar o
-    terminal do próprio vscode, ou do Linux.
 
 ```c
 #define IMG_IN  "deepak-kumar-rX9uFci3pfY-unsplash.pgm"
