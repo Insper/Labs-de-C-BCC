@@ -11,15 +11,23 @@ export default defineConfig({
       { text: 'Examples', link: '/markdown-examples' }
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    sidebar:
+    {
+      "/lab01-primeiro-contato/": [
+        {
+          text: "Lab 01",
+          base: "/lab01-primeiro-contato/",
+          items: [
+            { text: "Início", link: "/" },
+            { text: "Exercícios de código", link: "/" },
+            { text: "Revisão de tipos", link: "/" },
+            { text: "Exercícios de tipos: simulação e código", link: "/" },
+            
+          ]
+        }
+      ]
+    }
+    ,
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
