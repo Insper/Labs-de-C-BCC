@@ -65,7 +65,7 @@ def processa_pixel(val):
 
 :::
 
-Como regra geral, funções em *C* são declaradas com a seguinte estrutura.
+Como regra geral, funções em *C* são declaradas com a seguinte estrutura. Na hora de colocar os tipos você deve tirar os **< >**.
 
 
 ```c
@@ -146,3 +146,6 @@ for i in range(N):
 
 :::
 
+Com isso já conseguimos criar algumas funções simples em *C*. Siga para a próxima atividade no PrairieLearn.
+
+<a href="TODO"> Acessar exercícios </a>

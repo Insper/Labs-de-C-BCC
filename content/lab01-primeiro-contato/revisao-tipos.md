@@ -1,6 +1,6 @@
 # Tipos numéricos em *C*
 
-Vamos olhar inicialmente para variáveis numéricas em *C*. Temos os seguintes tipos inteiros disponíveis.
+Nosso código nos exercícios anteriores só usou variáveis `int`. Em *C* temos os seguintes tipos inteiros disponíveis.
 
 | tipo          | tamanho | range                                  |
 |---------------|---------|----------------------------------------|
@@ -36,6 +36,7 @@ Por exemplo, veja os códigos abaixo em *C*.
 
 10.0 / 3 // devolve 3.33333 -> conversão automática para double por causa da casa decimal
 10 / 3.0 // igual ao anterior
+(double) 10 / 3 // igual ao primeiro, usando conversão de int para double via casting
 ```
 
 Os tipos inteiros em *C* são implementados com suporte de hardware e dão *overflow*. Ou seja, se uma variável `char` tem valor `127` (o máximo na tabela mais acima), somar `1` faz ela "dar a volta" e assumir o valor `-128`.  Os exemplos abaixo mostram esse comportamento. 
@@ -46,3 +47,27 @@ c + 1; // 255
 char c2 = -128;
 c2 - 1; // 127
 ```
+
+Vamos agora fazer um exercício simples de simulação. Ao fim do código abaixo, qual o valor de `i`?
+
+```c
+double s = 0;
+int i;
+
+i = 1;
+while(i <= 7) {
+    s += i / 2;
+    i++;
+}
+```
+
+::: details Resposta
+A resposta  `i == 14` está **ERRADA!!** Apesar de `s` ser uma variável do tipo `double`, a operação `i / 2` é feita entre dois `int` e, portanto, resulta em um `int`. Logo, a resposta correta é `i == 12`. 
+
+Se quisermos que a resposta seja `i == 14` precisamos converter alguma das variáveis para `double`. Todas as seguintes opções fazem isso.
+
+- `i / 2.0`
+- `(double) i / 2`
+:::
+
+Vamos praticar agora! Vá para a próxima página para fazer alguns exercícios de simulação e de código que praticam a conversão de tipos.

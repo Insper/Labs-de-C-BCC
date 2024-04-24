@@ -16,13 +16,10 @@ export default defineConfig({
       "/lab01-primeiro-contato/": [
         {
           text: "Lab 01",
-          base: "/lab01-primeiro-contato/",
+          base: "/lab01-primeiro-contato",
           items: [
-            { text: "Início", link: "/" },
-            { text: "Exercícios de código", link: "/" },
-            { text: "Revisão de tipos", link: "/" },
-            { text: "Exercícios de tipos: simulação e código", link: "/" },
-            
+            { text: "Funções simples", link: "/" },
+            { text: "Revisão de tipos", link: "/revisao-tipos" },
           ]
         }
       ]
@@ -32,5 +29,12 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
+  },
+  "vite": {
+    define: {
+      global: {
+        link1: "sdlfjlsfjlkds"
+      }
+    }
   }
 })
