@@ -146,6 +146,5 @@ for i in range(N):
 
 :::
 
-Com isso já conseguimos criar algumas funções simples em *C*. Siga para a próxima atividade no PrairieLearn.
+Com isso já conseguimos criar algumas funções simples em *C*. Siga para a próxima página para iniciar a atividade prática. 
 
-<a href="TODO"> Acessar exercícios </a>

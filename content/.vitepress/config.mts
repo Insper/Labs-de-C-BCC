@@ -19,6 +19,7 @@ export default defineConfig({
           base: "/lab01-primeiro-contato",
           items: [
             { text: "Funções simples", link: "/" },
+            { text: "Atividade 1", link: "/atividade-pratica-1" },
             { text: "Revisão de tipos", link: "/revisao-tipos" },
           ]
         }
